@@ -458,6 +458,7 @@ root
  |-- timestamp: timestamp (nullable = true)
  |-- timestampType: integer (nullable = true)
 ```
+```
 commits = raw_commits.select(raw_commits.value.cast('string'))
 ```
 The output reflected the output from the players topic. Given the data is the same, this was expected. Just as with the players topic, I then wrote the data frame to a parquet file into hdfs. 
